@@ -1,4 +1,4 @@
-package knn;
+﻿package knn;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -234,85 +234,4 @@ public class Knn {
 	
 
 }
-//	public void comparingTest() {
-//		
-//		Scanner scan = new Scanner(System.in);
-//		String k = scan.nextLine();
-//		int limit = Integer.parseInt(k);
-//		int half = (limit/2) + 1;
-//		String wynik = null;
-//		
-//		
-//		for( String s : readedTrainingFile) {
-//			
-//			List<Double> neighbors = new ArrayList<>();
-//			List<String> neighborName = new ArrayList<>();
-//			List<String> limitNeighborName = new ArrayList<>();
-//			String[] line = s.split("\\s+");
-//			int podobienstwo = 0;
-//
-//			
-//			
-//			double firstValue = Double.parseDouble(line[1]);
-//			double secondValue = Double.parseDouble(line[2]);
-//			double thirdValue = Double.parseDouble(line[3]);
-//			double fourthValue = Double.parseDouble(line[4]);
-//			String fifthValue = line[5];
-//			
-////			System.out.println(s);
-//					
-//			for(String a : readedTestFile) {
-//				
-//				String[] trainingLine = a.split("\\s+");
-//				double firstVal = Double.parseDouble(trainingLine[1]);
-//				double secondVal = Double.parseDouble(trainingLine[2]);
-//				double thirdVal = Double.parseDouble(trainingLine[3]);
-//				double fourthVal = Double.parseDouble(trainingLine[4]);
-//				String fifthVal = trainingLine[5];
-//			
-//				double first = Math.pow((firstValue - firstVal), 2.0);
-//				double second = Math.pow((secondValue - secondVal), 2.0);
-//				double third = Math.pow((thirdValue - thirdVal), 2.0);
-//				double fourth = Math.pow((fourthValue - fourthVal), 2.0);
-//				
-//				double distance = Math.sqrt(first + second + third + fourth);
-//
-//				
-//				neighbors.add(distance);
-//				Collections.sort(neighbors);
-//				
-//				neighborName.add(String.valueOf(distance) + " " + fifthVal);
-//				Collections.sort(neighborName);
-////				System.out.println(a);
-//				
-//			}
-////			System.out.println(neighborName);
-//			
-//			for(int i = 0; i <limit; i++) {
-//				limitNeighborName.add(neighborName.get(i));
-//			}
-////			System.out.println(limitNeighborName);
-//			
-//			for(int j = 0; j<limit; j++) {
-//				if(limitNeighborName.get(j).contains(fifthValue)) {
-//					podobienstwo++;
-//				}
-//			}
-//			if(podobienstwo >= half) {
-//			succNumber++;
-//		}
-//			System.out.println(podobienstwo);
-//		}
-//		System.out.println(succNumber);
-//
-//		
-//
-//
-//		
-//		
-//	}
-//	
-//	
-//	
-//
-//}
+
